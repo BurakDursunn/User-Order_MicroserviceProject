@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service  # Servisin adı belirtildi
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:  # Boş bırakılabilir
+  h2:
+    console:
+      enabled: true  # H2 konsolunu etkinleştir
+  jpa:
+    hibernate:
+      ddl-auto: update  # Veritabanı otomatik güncelleme
+    show-sql: true  # SQL sorgularını göster
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka  # Eureka sunucusunun URL'si

@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false   # Sunucu kendi kendini kaydetmeyecek
+    fetch-registry: false          # Sunucu, diğer sunuculardan kayıt almayacak
+  instance:
+    hostname: localhost
