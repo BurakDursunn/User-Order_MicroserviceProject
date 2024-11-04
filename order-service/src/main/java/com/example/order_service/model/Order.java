@@ -11,7 +11,6 @@ public class Order {
     private Long userId;
     private String product;
 
-    // Getter ve Setter'lar
     public Long getId() {
         return id;
     }

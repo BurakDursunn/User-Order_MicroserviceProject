@@ -12,7 +12,6 @@ public class User {
     private String name;
     private String email;
 
-    // Getter ve Setter'lar
     public Long getId() {
         return id;
     }
